@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="age-container">
+        <div class="mode-btns">
+            <button onclick="darkMode()">🌙 Dark</button>
+            <button onclick="lightMode()">☀️ Light</button>
+        </div>
+
+        <h2>Age Calculator</h2>
+        <p class="format">Format: DATE / MONTH / YEAR</p>
+
+        <input type="text" id="dob" placeholder="DD/MM/YYYY" maxlength="10" oninput="formatDate(this)">
+
+        <button class="calc-btn" onclick="calculateAge()">CALCULATE AGE</button>
+
+        <p id="result">YOUR AGE --</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: radial-gradient(circle at top, #87ceeb, #0d1f33);
+    transition: background 0.4s;
+}
+
+.age-container{
+    background: linear-gradient(160deg, #1e90ff, #00bfff);
+    padding:40px 45px;
+    border-radius:28px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.age-container:hover{
+    transform: translateY(-6px);
+    box-shadow:0 30px 80px rgba(0,0,0,0.6);
+}
+
+.mode-btns{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.mode-btns button{
+    padding:6px 14px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.mode-btns button:hover{
+    background:#1e90ff;
+    color:#fff;
+}
+
+h2{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.format{
+    color:#e0f6ff;
+    font-size:12px;
+    margin-bottom:18px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:25px;
+    outline:none;
+    font-size:14px;
+    text-align:center;
+    margin-bottom:22px;
+    background: rgba(255,255,255,0.9);
+    color:#0d1f33;
+    transition: 0.3s;
+}
+
+input:focus{
+    box-shadow: 0 0 0 2px rgba(30,144,255,0.4);
+}
+
+.dark input{
+    background: rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+
+.calc-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background:#00bfff;
+    color:#fff;
+    font-weight:600;
+    letter-spacing:1px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.calc-btn:hover{
+    background:#04ff26ea;
+    transform: translateY(-4px) scale(1.05);
+}
+
+#result{
+    margin-top:18px;
+    font-weight:600;
+    color:#00ff7f;
+}
+
+.dark{
+    background: radial-gradient(circle at top, #020617, #000);
+}
+
+.dark .age-container{
+    background: linear-gradient(160deg, #020617, #0b1220);
+}
+
+@media(max-width:400px){
+    .age-container{
+        width:90%;
+        padding:35px 30px;
+    }
+}
